@@ -671,10 +671,36 @@ a {
 }
 
 /* ----- Appointment ----- */
-.appointment {
-    padding: 100px 0;
-    background: #F6FBFF;
+
+.appointment__inner {
     text-align: center;
+    background: #F6FBFF;
+    padding: 100px 70px;
+
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appointment__desc {
+    font-size: 1.6rem;
+    min-width: 617px;
+    margin: 18px auto 0;
 }
 
 .appointment__btn {
